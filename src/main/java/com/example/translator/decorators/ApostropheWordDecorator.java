@@ -15,7 +15,7 @@ public class ApostropheWordDecorator extends WordProcessor {
         if (shouldProcess(word)) {
             StringBuilder sb = new StringBuilder(processor.process(word).replaceAll("'", ""));
 
-            for (int i = 0; word.length() - i > 0 && sb.length() - i > 0; i++) {
+            for (int i = 0; i < word.length() && i <= sb.length(); i++) {
                 if (word.charAt(word.length() - 1 - i) == '\'') {
                     sb.insert(sb.length() - i, "'");
                 }

@@ -7,7 +7,7 @@ import spock.lang.Specification
 import spock.lang.Subject
 
 @ActiveProfiles("test")
-@SpringBootTest(classes = [TestApplication])
+@SpringBootTest(classes = Application)
 class PigLatinTranslatorIntegrationSpec extends Specification {
 
     @Subject

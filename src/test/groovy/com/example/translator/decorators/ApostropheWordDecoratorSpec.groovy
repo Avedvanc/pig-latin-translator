@@ -35,6 +35,7 @@ class ApostropheWordDecoratorSpec extends Specification {
             "sig'way"   | "newword"     || "neww'ord"
             "A'bc"      | "processed"   || "process'ed"
             "eb'f"      | "a'eway"      || "aewa'y"
+            "ab'cdefg"  | "a'eway"      || "'aeway"
     }
 
 }
